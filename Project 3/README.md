@@ -8,24 +8,16 @@
 ### 数据存储（一）
 
 #### 要求  
-* Figure 1：首次进入，呈现创建密码界面。  
- ![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images/fig1.jpg)
-* Figure 2：若密码不匹配，弹出Toast提示。  
- ![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images/fig2.jpg) 
-* Figure 3：若密码为空，弹出Toast提示。  
- ![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images/fig3.jpg) 
-* Figure 4：退出后第二次进入呈现输入密码界面。  
- ![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images/fig4.jpg) 
-* Figure 5：若密码不正确，弹出Toast提示。  
- ![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images/fig5.jpg)
-* Figure 6：文件加载失败，弹出Toast提示。  
- ![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images/fig6.jpg) 
-* Figure 7：成功保存文件，弹出Toast提示。  
- ![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images/fig7.jpg) 
-* Figure 8：成功导入文件，弹出Toast提示。  
- ![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images/fig8.jpg) 
+* 首次进入，呈现创建密码界面。  
+* 若密码不匹配，弹出Toast提示。  
+* 若密码为空，弹出Toast提示。  
+* 退出后第二次进入呈现输入密码界面。  
+* 若密码不正确，弹出Toast提示。  
+* 文件加载失败，弹出Toast提示。  
+* 成功保存文件，弹出Toast提示。  
+* 成功导入文件，弹出Toast提示。  
 
-1.  如Figure 1至Figure 8所示，本次实验演示应用包含两个Activity。 
+1.  本次实验演示应用包含两个Activity。 
 2.  首先是密码输入Activity：
     * 若应用首次启动，则界面呈现出两个输入框，分别为新密码输入框和确认密码输入框。  
     * 输入框下方有两个按钮：  
@@ -98,12 +90,12 @@
   **附加内容（加分项，本次实验与（一）合计100分，加分项每项占10分）**
   
   1. **头像**
-      在用户注册页面可以选择用户头像，ImageView初始化为图add![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images2/add.png)，如图2.1。点击ImageView，进入手机图库进行图片选择。如图4.1.
+      在用户注册页面可以选择用户头像，ImageView初始化为图add。点击ImageView，进入手机图库进行图片选择。如图4.1.
       * 如果正确选择了一张图片，则ImageView显示本次选择的图片。如图4.2.
       * 如果没有正确选择图片（如在图片选择页面点击了取消或按了手机的BACK键），则ImageView保留本次点击事件发生前的状态，如初始的＋号图片，如图4.1，或者是上一个被正确选择的图像。如图4.2.
-      在评论页面，每条Item应当正确显示用户的头像，如果用户没有在注册页面选择头像，则使用默认头像![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images2/me.png)。如图4.3.
+      在评论页面，每条Item应当正确显示用户的头像，如果用户没有在注册页面选择头像，则使用默认头像。
   2. **点赞**
-  在评论界面，点赞按钮可以被点击，点赞数可以正常统计，用户点赞状态可以被正常记录，白色的未点赞状态![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images2/white.png)经用户点击后变为红色的点赞状态![preview](https://gitee.com/code_sysu/PersonalProject3/raw/master/manual/images2/red.png)，点赞数加1；再次点击点赞按钮可取消点赞，点赞数减1.要求用数据库记录点赞的信息，使得应用重启后用户的点赞状态，评论的点赞数可以正常显示，注意：用户的对每条评论的点赞状态是唯一的，即不同用户对每条评论的点赞状态应当分开记录，同一用户对不同评论的点赞状态也应当分开记录。同理，每条评论的点赞数也应当分开记录。请参考demo自行体会。
+  在评论界面，点赞按钮可以被点击，点赞数可以正常统计，用户点赞状态可以被正常记录，白色的未点赞状态经用户点击后变为红色的点赞状态，点赞数加1；再次点击点赞按钮可取消点赞，点赞数减1.要求用数据库记录点赞的信息，使得应用重启后用户的点赞状态，评论的点赞数可以正常显示，注意：用户的对每条评论的点赞状态是唯一的，即不同用户对每条评论的点赞状态应当分开记录，同一用户对不同评论的点赞状态也应当分开记录。同理，每条评论的点赞数也应当分开记录。请参考demo自行体会。
 
 ---
 

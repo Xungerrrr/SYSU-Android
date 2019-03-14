@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Storage1</string>
+    <string name="new_pass">New Password</string>
+    <string name="conf_pass">Confirm Password</string>
+    <string name="empty_pass">Password cannot be empty.</string>
+    <string name="mismatch_pass">Password mismatch.</string>
+    <string name="wrong_pass">Invalid password.</string>
+    <string name="load_fail">Failed to load the file.</string>
+    <string name="save_success">Save successfully.</string>
+    <string name="load_success">Load successfully.</string>
+</resources>

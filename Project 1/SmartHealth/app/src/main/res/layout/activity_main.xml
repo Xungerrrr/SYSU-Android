@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/title"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sysu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/sysu"
+        android:src="@mipmap/sysu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/search_src_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/search_hint"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/search_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sysu"/>
+
+    <Button
+        android:id="@+id/search_button"
+        android:background="@drawable/button_rounded"
+        android:text="@string/search"
+        style="@style/MyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_src_text"
+        app:layout_constraintTop_toBottomOf="@id/sysu" />
+
+    <RadioGroup
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_src_text">
+
+        <RadioButton
+            android:id="@+id/img"
+            android:checked="true"
+            android:text="@string/img"
+            style="@style/MyRadioButton"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <RadioButton
+            android:id="@+id/vid"
+            android:text="@string/vid"
+            style="@style/MyRadioButton"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <RadioButton
+            android:id="@+id/qa"
+            android:text="@string/qa"
+            style="@style/MyRadioButton"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <RadioButton
+            android:id="@+id/info"
+            android:text="@string/info"
+            style="@style/MyRadioButton" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

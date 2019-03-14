@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Storage2</string>
+    <string name="empty_name">Username cannot be empty.</string>
+    <string name="empty_password">Password cannot be empty.</string>
+    <string name="password_mismatch">Password mismatch.</string>
+    <string name="no_user">Username not exist.</string>
+    <string name="password_invalid">Invalid password.</string>
+    <string name="user_exists">Username already exists.</string>
+    <string name="empty_comment">Comment cannot be empty.</string>
+    <string name="report_msg">Already reported.</string>
+</resources>

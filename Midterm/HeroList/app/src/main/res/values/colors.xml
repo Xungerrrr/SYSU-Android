@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#307EC0</color>
+    <color name="colorPrimaryDark">#296EA7</color>
+    <color name="colorAccent">#296EA7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="activity_background">#EEEEEE</color>
+    <color name="gray">#999999</color>
+    <color name="black">#000000</color>
+    <color name="colorBlack">#D5000000</color>
+    <color name="yellow">#FFC400</color>
+    <color name="translucent_scrim_bottom">#AA000000</color>
+    <color name="translucent_scrim_top">#8A000000</color>
+</resources>

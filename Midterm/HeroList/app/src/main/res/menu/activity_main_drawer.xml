@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_hero"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="My Hero"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favorites" />
+
+    </group>
+
+    <item android:title="Actions">
+        <menu>
+            <item
+                android:id="@+id/nav_search"
+                android:icon="@drawable/android_search"
+                android:title="Search" />
+            <item
+                android:id="@+id/nav_add"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="Add" />
+        </menu>
+    </item>
+
+</menu>

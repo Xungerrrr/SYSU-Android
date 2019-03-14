@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choose_list">
+        <item>All</item>
+        <item>Like</item>
+    </string-array>
+    <string-array name="choose_category">
+        <item>All</item>
+        <item>Name</item>
+        <item>Type</item>
+        <item>Location</item>
+    </string-array>
+</resources>
